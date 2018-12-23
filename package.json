@@ -1,0 +1,16 @@
+{
+  "name": "filterimg",
+  "version": "1.0.0",
+  "description": "A javascript for filtering images that are not used in an project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filterimg",
+    "filterphoto",
+    "filterpic"
+  ],
+  "author": "firyang",
+  "license": "ISC"
+}
