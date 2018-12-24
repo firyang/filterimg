@@ -16,5 +16,5 @@ A javascript for filtering images that are not used in an project
  使用方法：  
  1、将js文件copy到项目中  
  2、在原方法页面中直接声明参数，然后调用方法  
- 3、在VScode或Webstorm中运行即可（在这两个编辑器中如何运行node程序，可网上搜索方法），也可在命令行中运行 $ node index.js
- 4、该方法使用nodejs的fs模块方法，需要 require('fs')，并在node环境中执行
+ 3、在VScode或Webstorm中运行即可（在这两个编辑器中如何运行node程序，可网上搜索方法），也可在命令行中运行 $ node index.js  
+ 4、该方法使用nodejs的fs模块方法，需要 require('fs')，并在node环境中执行  
