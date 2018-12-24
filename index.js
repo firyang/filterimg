@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 /**
  * 该函数从web文件中匹配所引用的图片，然后从原路径copy图片到新的路径
  * @param {Array} paths  web文件（html、vue、css）路径 , 绝对路径 eg. ['F:\\xampp\\htdocs\\mt\\css\\']
@@ -54,10 +56,21 @@ function filterImg(paths,src,des){
                     }
                     
                     // 复制文件
-                    fs.writeFileSync(des+filePath,fs.readFileSync(src+filePath))
+                    // readFileSync方法, 找不到文件会报“no such file or directory”错误, 捕获该错误，保证程序正常执行
+                    try {
+                       fs.writeFileSync(des+filePath,fs.readFileSync(src+filePath)) 
+                    } catch (error) {
+                        console.log('在原文件中没有找到该图片：'+ src + filePath)
+                    }
+                    
                 }
             }
         }
     }
     console.log('success')
 }
+
+let paths= ['F:\\xampp\\htdocs\\mtime\\','F:\\xampp\\htdocs\\mtime\\css\\'];
+let src= 'F:\\xampp\\htdocs\\mtime\\';
+let des = 'F:\\xampp\\htdocs\\mtime\\copy\\'
+filterImg(paths,src,des)
