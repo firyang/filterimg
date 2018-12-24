@@ -2,7 +2,7 @@
   
 A javascript for filtering images that are not used in an project  
   
-用于过滤不在项目中引用的图片的js脚本  
+用于过滤不在项目中引用的图片 
   
 参数说明：  
 /**  
