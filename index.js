@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 /**
- * 该函数从web文件中匹配所引用的图片，然后从原路径copy图片到新的路径
+ * 该方法从web文件中匹配所引用的图片，然后从原路径copy图片到新的路径
  * @param {Array} paths  web文件（html、vue、css）路径 , 绝对路径 eg. ['F:\\xampp\\htdocs\\mt\\css\\']
  * @param {String} src   项目图片原路径, 绝对路径 eg. 'F:\\xampp\\htdocs\\mt\\'
  * @param {String} des   copy引用图片存放到该路径, des不能与src相同, 绝对路径 eg. 'F:\\xampp\\htdocs\\mt\\copy\\'
@@ -70,7 +70,7 @@ function filterImg(paths,src,des){
     console.log('success')
 }
 
-let paths= ['F:\\xampp\\htdocs\\mtime\\','F:\\xampp\\htdocs\\mtime\\css\\'];
-let src= 'F:\\xampp\\htdocs\\mtime\\';
-let des = 'F:\\xampp\\htdocs\\mtime\\copy\\'
+let paths= ['F:\\xampp\\htdocs\\mt\\','F:\\xampp\\htdocs\\mt\\css\\'];
+let src= 'F:\\xampp\\htdocs\\mt\\';
+let des = 'F:\\xampp\\htdocs\\mt\\copy\\'
 filterImg(paths,src,des)
